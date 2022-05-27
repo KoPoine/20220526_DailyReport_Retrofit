@@ -1,11 +1,9 @@
 package com.neppplus.a20220526_dailyreport_retrofit
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.util.Log
 import com.neppplus.a20220526_dailyreport_retrofit.models.BasicResponse
 import com.neppplus.a20220526_dailyreport_retrofit.utils.ContextUtil
 import retrofit2.Call
@@ -31,7 +29,7 @@ class SplashActivity : BaseActivity() {
 //        3) 로그인시 내려주는 response와 비슷한 response를 내려주는가?
         apiList.getRequestMainInfo(
             ContextUtil.getLoginUserToken(mContext))
-            .enqueue(object : Callback<BasicResponse>{
+            .enqueue(object : Callback<BasicResponse> {
                 override fun onResponse(
                     call: Call<BasicResponse>,
                     response: Response<BasicResponse>

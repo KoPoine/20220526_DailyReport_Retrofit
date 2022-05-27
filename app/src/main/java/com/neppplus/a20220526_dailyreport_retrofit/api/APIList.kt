@@ -15,7 +15,6 @@ interface APIList {
         @Field("password") pw: String
     ) : Call<BasicResponse>
 
-
     @FormUrlEncoded
     @PUT("/user")
     fun putRequestSignUp (
@@ -25,5 +24,7 @@ interface APIList {
     ) : Call<BasicResponse>
 
     @GET("/main_info")
-    fun getRequestMainInfo(@Header("X-Http-Token")token : String) : Call<BasicResponse>
+    fun getRequestMainInfo(
+        @Header("X-Http-Token")token : String
+    ) : Call<BasicResponse>
 }
