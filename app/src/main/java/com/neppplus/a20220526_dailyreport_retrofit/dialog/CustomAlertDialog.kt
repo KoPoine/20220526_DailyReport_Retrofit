@@ -3,6 +3,7 @@ package com.neppplus.a20220526_dailyreport_retrofit.dialog
 import android.app.Activity
 import android.app.Dialog
 import android.content.Context
+import android.view.View
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
 import com.neppplus.a20220526_dailyreport_retrofit.R
@@ -10,7 +11,7 @@ import com.neppplus.a20220526_dailyreport_retrofit.databinding.CustomAlertDialog
 
 class CustomAlertDialog( val mContext : Context, val activity: Activity) {
 
-    private val dialog = Dialog(mContext)
+    val dialog = Dialog(mContext)
 
     lateinit var binding : CustomAlertDialogBinding
 
@@ -31,11 +32,9 @@ class CustomAlertDialog( val mContext : Context, val activity: Activity) {
 
         binding.positiveBtn.setOnClickListener {
             onClickListener.positiveBtnClicked()
-            dialog.dismiss()
         }
         binding.negativeBtn.setOnClickListener {
             onClickListener.negetiveBtnClicked()
-            dialog.dismiss()
         }
 
         dialog.show()
