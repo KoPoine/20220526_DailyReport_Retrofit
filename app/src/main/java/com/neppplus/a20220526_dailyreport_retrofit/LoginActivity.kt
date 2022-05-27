@@ -8,6 +8,7 @@ import androidx.databinding.DataBindingUtil
 import com.neppplus.a20220526_dailyreport_retrofit.databinding.ActivityLoginBinding
 import com.neppplus.a20220526_dailyreport_retrofit.models.BasicResponse
 import com.neppplus.a20220526_dailyreport_retrofit.utils.ContextUtil
+import com.neppplus.a20220526_dailyreport_retrofit.utils.GlobalData
 import org.json.JSONObject
 import retrofit2.Call
 import retrofit2.Callback
@@ -46,6 +47,8 @@ class LoginActivity : BaseActivity() {
 
                         ContextUtil.setAutoLogin(mContext, binding.autoCheckBox.isChecked)
                         ContextUtil.setLoginUserToken(mContext, br.data.token)
+
+                        GlobalData.loginUser = br.data.user
 
                         Toast.makeText(mContext, "${ br.data.user.nick_name }님 환영합니다.", Toast.LENGTH_SHORT).show()
                         val myIntent = Intent(mContext, MainActivity::class.java)

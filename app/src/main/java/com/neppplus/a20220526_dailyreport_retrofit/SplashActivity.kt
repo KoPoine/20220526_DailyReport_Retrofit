@@ -6,6 +6,7 @@ import android.os.Handler
 import android.os.Looper
 import com.neppplus.a20220526_dailyreport_retrofit.models.BasicResponse
 import com.neppplus.a20220526_dailyreport_retrofit.utils.ContextUtil
+import com.neppplus.a20220526_dailyreport_retrofit.utils.GlobalData
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -35,7 +36,9 @@ class SplashActivity : BaseActivity() {
                     response: Response<BasicResponse>
                 ) {
                     if (response.isSuccessful) {
+                        val br = response.body()!!
                         isTokenOk = true
+                        GlobalData.loginUser = br.data.user
                     }
                 }
 
