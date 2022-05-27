@@ -3,10 +3,7 @@ package com.neppplus.a20220526_dailyreport_retrofit.api
 import com.neppplus.a20220526_dailyreport_retrofit.models.BasicResponse
 import org.json.JSONObject
 import retrofit2.Call
-import retrofit2.http.Field
-import retrofit2.http.FormUrlEncoded
-import retrofit2.http.POST
-import retrofit2.http.PUT
+import retrofit2.http.*
 
 interface APIList {
 
@@ -26,4 +23,7 @@ interface APIList {
         @Field("password")pw :String,
         @Field("nick_name") nick : String
     ) : Call<BasicResponse>
+
+    @GET("/main_info")
+    fun getRequestMainInfo(@Header("X-Http-Token")token : String) : Call<BasicResponse>
 }

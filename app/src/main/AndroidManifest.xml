@@ -13,6 +13,9 @@
         android:theme="@style/Theme.20220526_DailyReport_Retrofit"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".SplashActivity"
+            android:exported="false" />
+        <activity
             android:name=".DetailProfileActivity"
             android:exported="false" />
         <activity
