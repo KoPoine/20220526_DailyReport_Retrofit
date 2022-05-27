@@ -24,6 +24,7 @@
 
 
         <TextView
+            android:id="@+id/titleTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Title"
@@ -38,6 +39,15 @@
             android:src="@drawable/more_vert_24px"
             android:visibility="gone"
             android:layout_gravity="center|end"/>
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:visibility="gone"
+            android:text="저장"
+            android:textColor="@color/blueGrey_900"/>
 
     </FrameLayout>
 </layout>
