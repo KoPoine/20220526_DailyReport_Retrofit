@@ -16,7 +16,7 @@ class SettingFragment : BaseFragment() {
 
     lateinit var binding : FragmentSettingBinding
 
-    val loginUser = GlobalData.loginUser!!
+    var loginUser = GlobalData.loginUser!!
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -41,6 +41,17 @@ class SettingFragment : BaseFragment() {
     }
 
     override fun setValues() {
+        setDataToUi()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        loginUser = GlobalData.loginUser!!
+
+        setDataToUi()
+    }
+
+    fun setDataToUi() {
         binding.nicknameTxt.text = loginUser.nick_name
         Glide.with(mContext)
             .load(loginUser.profile_img)
