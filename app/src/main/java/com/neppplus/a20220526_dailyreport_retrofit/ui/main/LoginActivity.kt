@@ -55,6 +55,7 @@ class LoginActivity : BaseActivity() {
                         Toast.makeText(mContext, "${ br.data.user.nick_name }님 환영합니다.", Toast.LENGTH_SHORT).show()
                         val myIntent = Intent(mContext, MainActivity::class.java)
                         startActivity(myIntent)
+                        finish()
                     }
 
                     else {

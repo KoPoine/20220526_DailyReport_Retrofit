@@ -1,5 +1,6 @@
 package com.neppplus.a20220526_dailyreport_retrofit.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +9,7 @@ import androidx.databinding.DataBindingUtil
 import com.bumptech.glide.Glide
 import com.neppplus.a20220526_dailyreport_retrofit.R
 import com.neppplus.a20220526_dailyreport_retrofit.databinding.FragmentSettingBinding
+import com.neppplus.a20220526_dailyreport_retrofit.ui.setting.DetailProfileActivity
 import com.neppplus.a20220526_dailyreport_retrofit.utils.GlobalData
 
 class SettingFragment : BaseFragment() {
@@ -32,7 +34,10 @@ class SettingFragment : BaseFragment() {
     }
 
     override fun setupEvents() {
-
+        binding.detailProfileBtn.setOnClickListener {
+            val myIntent = Intent(mContext, DetailProfileActivity::class.java)
+            startActivity(myIntent)
+        }
     }
 
     override fun setValues() {

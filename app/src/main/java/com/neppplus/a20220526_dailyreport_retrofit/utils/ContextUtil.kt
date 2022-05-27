@@ -30,6 +30,11 @@ class ContextUtil {
             val  pref = context.getSharedPreferences(prefName, Context.MODE_PRIVATE)
             return pref.getString(LOGIN_USER_TOKEN, "")!!
         }
+
+        fun clear ( context: Context ) {
+            val  pref = context.getSharedPreferences(prefName, Context.MODE_PRIVATE)
+            pref.edit().clear().apply()
+        }
     }
 
 }
