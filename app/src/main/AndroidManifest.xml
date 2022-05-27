@@ -13,16 +13,17 @@
         android:theme="@style/Theme.20220526_DailyReport_Retrofit"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ui.goal.AddGoalActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.SplashActivity"
             android:exported="true"
             android:theme="@style/noActionBarTheme">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".ui.setting.DetailProfileActivity"
@@ -33,7 +34,7 @@
         <activity
             android:name=".ui.main.LoginActivity"
             android:exported="false"
-            android:theme="@style/noActionBarTheme"/>
+            android:theme="@style/noActionBarTheme" />
         <activity
             android:name=".ui.main.MainActivity"
             android:exported="false"
