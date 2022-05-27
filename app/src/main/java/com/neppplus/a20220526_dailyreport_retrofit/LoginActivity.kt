@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import com.neppplus.a20220526_dailyreport_retrofit.databinding.ActivityLoginBinding
 import com.neppplus.a20220526_dailyreport_retrofit.models.BasicResponse
+import com.neppplus.a20220526_dailyreport_retrofit.utils.ContextUtil
 import org.json.JSONObject
 import retrofit2.Call
 import retrofit2.Callback
@@ -30,8 +31,6 @@ class LoginActivity : BaseActivity() {
             startActivity(myIntent)
         }
 
-
-
         binding.loginBtn.setOnClickListener {
             val editEmail = binding.emailEdt.text.toString()
             val editPw = binding.passwordEdt.text.toString()
@@ -42,7 +41,13 @@ class LoginActivity : BaseActivity() {
                     response: Response<BasicResponse>
                 ) {
                     if (response.isSuccessful) {
-                        Log.d("서버 성공", response.body()!!.toString())
+
+                        val br = response.body()!!
+
+                        ContextUtil.setAutoLogin(mContext, binding.autoCheckBox.isChecked)
+                        ContextUtil.setLoginUserToken(mContext, br.data.token)
+
+                        Toast.makeText(mContext, "${ br.data.user.nick_name }님 환영합니다.", Toast.LENGTH_SHORT).show()
                         val myIntent = Intent(mContext, MainActivity::class.java)
                         startActivity(myIntent)
                     }
