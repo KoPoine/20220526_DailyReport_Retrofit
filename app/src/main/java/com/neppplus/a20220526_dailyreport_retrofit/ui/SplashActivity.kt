@@ -1,10 +1,14 @@
-package com.neppplus.a20220526_dailyreport_retrofit
+package com.neppplus.a20220526_dailyreport_retrofit.ui
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import com.neppplus.a20220526_dailyreport_retrofit.BaseActivity
+import com.neppplus.a20220526_dailyreport_retrofit.R
 import com.neppplus.a20220526_dailyreport_retrofit.models.BasicResponse
+import com.neppplus.a20220526_dailyreport_retrofit.ui.main.LoginActivity
+import com.neppplus.a20220526_dailyreport_retrofit.ui.main.MainActivity
 import com.neppplus.a20220526_dailyreport_retrofit.utils.ContextUtil
 import com.neppplus.a20220526_dailyreport_retrofit.utils.GlobalData
 import retrofit2.Call

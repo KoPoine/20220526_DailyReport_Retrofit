@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         android:background="@color/blueGrey_900"
         android:orientation="vertical"
-        tools:context=".SignUpActivity">
+        tools:context=".ui.signup.SignUpActivity">
 
         <ScrollView
             android:layout_width="match_parent"

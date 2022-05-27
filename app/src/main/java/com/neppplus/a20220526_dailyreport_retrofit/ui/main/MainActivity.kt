@@ -1,8 +1,10 @@
-package com.neppplus.a20220526_dailyreport_retrofit
+package com.neppplus.a20220526_dailyreport_retrofit.ui.main
 
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import androidx.viewpager2.widget.ViewPager2
+import com.neppplus.a20220526_dailyreport_retrofit.BaseActivity
+import com.neppplus.a20220526_dailyreport_retrofit.R
 import com.neppplus.a20220526_dailyreport_retrofit.adapters.MainViewPagerAdapter
 import com.neppplus.a20220526_dailyreport_retrofit.databinding.ActivityMainBinding
 

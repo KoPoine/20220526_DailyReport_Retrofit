@@ -1,7 +1,8 @@
-package com.neppplus.a20220526_dailyreport_retrofit
+package com.neppplus.a20220526_dailyreport_retrofit.ui.setting
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.neppplus.a20220526_dailyreport_retrofit.BaseActivity
+import com.neppplus.a20220526_dailyreport_retrofit.R
 import com.neppplus.a20220526_dailyreport_retrofit.databinding.ActivityDetailProfileBinding
 
 class DetailProfileActivity : BaseActivity() {
