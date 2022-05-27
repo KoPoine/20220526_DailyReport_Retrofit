@@ -11,7 +11,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/close_24px"
+            android:visibility="gone"
             android:layout_gravity="center|start"/>
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_back_24px"
+            android:visibility="gone"
+            android:layout_gravity="center|start"/>
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -26,6 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/more_vert_24px"
+            android:visibility="gone"
             android:layout_gravity="center|end"/>
 
     </FrameLayout>

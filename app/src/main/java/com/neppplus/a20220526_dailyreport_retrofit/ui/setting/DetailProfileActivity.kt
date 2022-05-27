@@ -119,5 +119,7 @@ class DetailProfileActivity : BaseActivity() {
             .into(binding.profileImg)
         binding.emailTxt.text = loginUser.email
         binding.nicknameTxt.text = loginUser.nick_name
+
+        customBinding.closeBtn.visibility = View.GONE
     }
 }
