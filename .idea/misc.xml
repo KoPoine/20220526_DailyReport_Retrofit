@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/NePPPlus_Teacher_01/AndroidStudioProjects/20220526_DailyReport_Retrofit/app/src/main/res/drawable-v24/rectangle_am400_r8.xml" value="0.178" />
         <entry key="..\:/Users/NePPPlus_Teacher_01/AndroidStudioProjects/20220526_DailyReport_Retrofit/app/src/main/res/drawable/custom_edit_error_r4.xml" value="0.178" />
         <entry key="..\:/Users/NePPPlus_Teacher_01/AndroidStudioProjects/20220526_DailyReport_Retrofit/app/src/main/res/drawable/custom_edit_r4.xml" value="0.178" />
         <entry key="..\:/Users/NePPPlus_Teacher_01/AndroidStudioProjects/20220526_DailyReport_Retrofit/app/src/main/res/drawable/rectengle_blue_grey_800_r8.xml" value="0.178" />
@@ -15,12 +16,14 @@
         <entry key="..\:/Users/NePPPlus_Teacher_01/AndroidStudioProjects/20220526_DailyReport_Retrofit/app/src/main/res/layout/activity_splash.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/NePPPlus_Teacher_01/AndroidStudioProjects/20220526_DailyReport_Retrofit/app/src/main/res/layout/custom_action_bar.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/NePPPlus_Teacher_01/AndroidStudioProjects/20220526_DailyReport_Retrofit/app/src/main/res/layout/custom_alert_dialog.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/NePPPlus_Teacher_01/AndroidStudioProjects/20220526_DailyReport_Retrofit/app/src/main/res/layout/fragment_concentrate_todo.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/NePPPlus_Teacher_01/AndroidStudioProjects/20220526_DailyReport_Retrofit/app/src/main/res/layout/fragment_feed.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/NePPPlus_Teacher_01/AndroidStudioProjects/20220526_DailyReport_Retrofit/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/Users/NePPPlus_Teacher_01/AndroidStudioProjects/20220526_DailyReport_Retrofit/app/src/main/res/layout/fragment_setting.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/NePPPlus_Teacher_01/AndroidStudioProjects/20220526_DailyReport_Retrofit/app/src/main/res/layout/fragment_stat.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/NePPPlus_Teacher_01/AndroidStudioProjects/20220526_DailyReport_Retrofit/app/src/main/res/layout/fragment_time_table.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/NePPPlus_Teacher_01/AndroidStudioProjects/20220526_DailyReport_Retrofit/app/src/main/res/layout/list_item_goal.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/NePPPlus_Teacher_01/AndroidStudioProjects/20220526_DailyReport_Retrofit/app/src/main/res/layout/list_item_group.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/NePPPlus_Teacher_01/AndroidStudioProjects/20220526_DailyReport_Retrofit/app/src/main/res/layout/list_item_header.xml" value="0.25" />
         <entry key="..\:/Users/NePPPlus_Teacher_01/AndroidStudioProjects/20220526_DailyReport_Retrofit/app/src/main/res/layout/list_item_item.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/NePPPlus_Teacher_01/AndroidStudioProjects/20220526_DailyReport_Retrofit/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36614583333333334" />
